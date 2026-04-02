@@ -10,8 +10,8 @@ class CueCli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vegardlu/cue/releases/download/v6.0.0/cue_6.0.0_darwin_amd64.tar.gz"
-      sha256 "8f0c1ab818d21882eb72b872418fa7e03e0b6a2c0c89dcbeab7c6ecca67ceae0"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_darwin_amd64.tar.gz"
+      sha256 "e47f5c71e9c5a5ed92c0a9473378caac1b764335b910be0ef26bd6617eb255c9"
 
       define_method(:install) do
         bin.install "cue"
@@ -21,8 +21,8 @@ class CueCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vegardlu/cue/releases/download/v6.0.0/cue_6.0.0_darwin_arm64.tar.gz"
-      sha256 "f1b8f5dac37fa94540b2e888c4e09113235d4b2297e18c10100a8ce758b00515"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_darwin_arm64.tar.gz"
+      sha256 "aff1723ad616362baa41d38bb0a08dd60ee1243831f26f190a1d4480e1648fb4"
 
       define_method(:install) do
         bin.install "cue"
@@ -35,8 +35,8 @@ class CueCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegardlu/cue/releases/download/v6.0.0/cue_6.0.0_linux_amd64.tar.gz"
-      sha256 "936c727e4a7e8afafb335c2b56f33e841d601647ab6edddc91300167cdcb4c29"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_linux_amd64.tar.gz"
+      sha256 "1f9e9f6fa24b52c25c23ae0924fa3691dd5ed5f11b525bdd5379b6afdfb08a42"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
@@ -45,8 +45,8 @@ class CueCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegardlu/cue/releases/download/v6.0.0/cue_6.0.0_linux_arm64.tar.gz"
-      sha256 "3f38a0532c2af6c4a0530fa5e790e435ab4ba9f890f70a528b23cc8e0aad765f"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_linux_arm64.tar.gz"
+      sha256 "6282c8a75526e31a278ea6f44944a2e3d4932db45b809bd8897f0686c9b660ae"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
