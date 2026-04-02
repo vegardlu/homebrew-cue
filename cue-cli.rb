@@ -11,7 +11,7 @@ class CueCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_darwin_amd64.tar.gz"
-      sha256 "e47f5c71e9c5a5ed92c0a9473378caac1b764335b910be0ef26bd6617eb255c9"
+      sha256 "71d832351992c77ea4f847b240e488002be0a814553c89244df52577ab228727"
 
       define_method(:install) do
         bin.install "cue"
@@ -22,7 +22,7 @@ class CueCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_darwin_arm64.tar.gz"
-      sha256 "aff1723ad616362baa41d38bb0a08dd60ee1243831f26f190a1d4480e1648fb4"
+      sha256 "23aca8778a91b981c1354245ace1aa1f6deddd937a56b506a4786ec7c339f03d"
 
       define_method(:install) do
         bin.install "cue"
@@ -36,7 +36,7 @@ class CueCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_linux_amd64.tar.gz"
-      sha256 "1f9e9f6fa24b52c25c23ae0924fa3691dd5ed5f11b525bdd5379b6afdfb08a42"
+      sha256 "78cc34b92126bdae8886d6b325e39aacab6932100b485209d9d417b7dd335529"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
@@ -46,7 +46,7 @@ class CueCli < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vegardlu/cue-cli/releases/download/v6.0.0/cue_6.0.0_linux_arm64.tar.gz"
-      sha256 "6282c8a75526e31a278ea6f44944a2e3d4932db45b809bd8897f0686c9b660ae"
+      sha256 "5147eb7a2355b654a88a50ead34db44b91d4e308a92907a89066fad0fedd2651"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
