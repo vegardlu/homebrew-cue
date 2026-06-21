@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Cue for macOS</title>
+        <link>https://vegardlu.github.io/homebrew-cue/appcast.xml</link>
+        <description>Updates for the Cue Mac app.</description>
+        <language>en</language>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Sun, 21 Jun 2026 19:28:45 +0200</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vegardlu/homebrew-cue/releases/download/cue-macos-v0.1.0/Cue-0.1.0.dmg" sparkle:edSignature="JoDreNX/Ke2XL6gvyQK92+8csUhAiJW6uB9t3Wt1SJzJczRgeZgrVjvm/F41ku02IRGul7v1UUSfPWpZjOLVAQ==" length="2938144" type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
