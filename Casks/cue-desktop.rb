@@ -1,6 +1,6 @@
 cask "cue-desktop" do
-  version "0.1.0"
-  sha256 "6fc006cac79fa4ba940a73d0625f6d1241e0392ef5d83768518b148fd39834b3"
+  version "0.2.0"
+  sha256 "433450b604d42766cb42f84dd48e00236aa07f00a78c1dfd2b2d032ac17a329c"
 
   url "https://github.com/vegardlu/homebrew-cue/releases/download/cue-macos-v#{version}/Cue-#{version}.dmg",
       verified: "github.com/vegardlu/homebrew-cue/"
@@ -14,7 +14,7 @@ cask "cue-desktop" do
   end
 
   auto_updates true
-  depends_on macos: :sequoia
+  depends_on macos: :tahoe
 
   app "Cue.app"
 
