@@ -6,6 +6,14 @@
         <description>Updates for the Cue Mac app.</description>
         <language>en</language>
         <item>
+            <title>0.4.1</title>
+            <pubDate>Wed, 08 Jul 2026 16:20:31 +0200</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vegardlu/homebrew-cue/releases/download/cue-macos-v0.4.1/Cue-0.4.1.dmg" sparkle:edSignature="+RdT5bydHQh7Nn4zdld9jCxPVu4AhV8qyECYfp8WWbMBGATvT66cEO55WGMyUwzHhMIl3LY6gauO73o5OIcKCw==" length="7173601" type="application/octet-stream" />
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Wed, 08 Jul 2026 14:24:25 +0200</pubDate>
             <sparkle:version>5</sparkle:version>
