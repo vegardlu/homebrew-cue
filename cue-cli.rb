@@ -5,13 +5,13 @@
 class CueCli < Formula
   desc "Cue CLI — coordinate events from the command line"
   homepage "https://getcue.net/cli"
-  version "6.36.0"
+  version "6.51.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vegardlu/cue-cli/releases/download/v6.36.0/cue_6.36.0_darwin_amd64.tar.gz"
-      sha256 "555ad200988f3063f82206f8cdba89d46e2a4d8b5bbb297defbdbfec4b313562"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.51.0/cue_6.51.0_darwin_amd64.tar.gz"
+      sha256 "1e42737b2f1e7fc4bcffd81a8dd4be64e40bcb09c5c150c1e9287cdc4892dd10"
 
       define_method(:install) do
         bin.install "cue"
@@ -21,8 +21,8 @@ class CueCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vegardlu/cue-cli/releases/download/v6.36.0/cue_6.36.0_darwin_arm64.tar.gz"
-      sha256 "13c57bf9bec488ac842d523cd7760a285e603377dbffbf42f2ceef45a233c3a9"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.51.0/cue_6.51.0_darwin_arm64.tar.gz"
+      sha256 "b25026cc2af44ddab4a45ce3ce2213f3eff7b3d7b1b96b47116203bdbeda6e8a"
 
       define_method(:install) do
         bin.install "cue"
@@ -35,8 +35,8 @@ class CueCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegardlu/cue-cli/releases/download/v6.36.0/cue_6.36.0_linux_amd64.tar.gz"
-      sha256 "f86eff92ee632d67bf30e1fbb3ba06029440c3b1740b252300731be982442027"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.51.0/cue_6.51.0_linux_amd64.tar.gz"
+      sha256 "5e936d9c6451b2f0ef850a36a56ab3ca5d892b8abe64394a85c99692d05829a4"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
@@ -45,8 +45,8 @@ class CueCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vegardlu/cue-cli/releases/download/v6.36.0/cue_6.36.0_linux_arm64.tar.gz"
-      sha256 "05abf88c6d3db4fcda6b2a3ee7f0eb4a9022497fa6d365d779e689f79973b1aa"
+      url "https://github.com/vegardlu/cue-cli/releases/download/v6.51.0/cue_6.51.0_linux_arm64.tar.gz"
+      sha256 "f8b1cda9aa8754f7c6e59741603ce95f08777c3945e8c3de8ad1a79523586661"
       define_method(:install) do
         bin.install "cue"
         bash_completion.install "completions/cue.bash" => "cue"
