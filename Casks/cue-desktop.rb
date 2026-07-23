@@ -1,6 +1,6 @@
 cask "cue-desktop" do
-  version "0.5.0"
-  sha256 "372074f0054052839b523a9977d6d2c14770ee9cd93e5fee2c08463ca62213a8"
+  version "0.6.0"
+  sha256 "013403c297bc7d3e0d46a1930babb2ead5549491ba6b31ad6f588a8c800e2d8c"
 
   url "https://github.com/vegardlu/homebrew-cue/releases/download/cue-macos-v#{version}/Cue-#{version}.dmg",
       verified: "github.com/vegardlu/homebrew-cue/"
