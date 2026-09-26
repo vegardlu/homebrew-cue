@@ -37,9 +37,11 @@ cask "cue-cli" do
   fish_completion "completions/cue.fish"
   zsh_completion "completions/_cue"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/cue"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr",
+          args:           ["-dr", "com.apple.quarantine", "{{staged_path}}/cue"],
+          writable_paths: ["{{staged_path}}/cue"]
     end
   end
 
