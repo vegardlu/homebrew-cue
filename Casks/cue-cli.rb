@@ -8,25 +8,25 @@ cask "cue-cli" do
     end
   end
 
-  version "6.69.7"
+  version "6.69.10"
 
   on_macos do
     on_arm do
-      sha256 "63b2b4156cd710fb95b0f5991881d5f2874d18684a1ca272bced5fc04133aea9"
+      sha256 "5a3a49d35ddb166398f606e988f7449f5fbb0c751baa7475645e947e66a426cb"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0029f88b522bd4e27e1d1f05c0a68764f6eb6bc2b356edb13fde2f5625efe07b"
+      sha256 "e4ed6db98b3a251233cdf09318b64dbacdc7d03e6943f80c24d3dd31aa472f76"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "4b650e585b78f201d823f62aac96b2a5e1636bb4fa91961c176778706c04be5e"
+      sha256 "0a7fbdc3c777113f305bfebce47d62335fcf765edd915dc5118c895c20588393"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f30edef80efb8121630cb90e4ffb61efaa0bd05ac25c372839977e9c9f2e5571"
+      sha256 "d42e8254e8ecbf81f5209233badf8fae00c987524eb52bf7173035a4ac609d81"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -41,8 +41,8 @@ cask "cue-cli" do
 
   binary "cue"
   bash_completion "completions/cue.bash"
-  fish_completion "completions/cue.fish"
   zsh_completion "completions/_cue"
+  fish_completion "completions/cue.fish"
 
   # No zap stanza required
 
