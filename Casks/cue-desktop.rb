@@ -9,7 +9,7 @@ cask "cue-desktop" do
 
   livecheck do
     url "https://vegardlu.github.io/homebrew-cue/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
