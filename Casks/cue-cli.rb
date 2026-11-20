@@ -8,25 +8,25 @@ cask "cue-cli" do
     end
   end
 
-  version "6.69.10"
+  version "6.69.12"
 
   on_macos do
     on_arm do
-      sha256 "5a3a49d35ddb166398f606e988f7449f5fbb0c751baa7475645e947e66a426cb"
+      sha256 "db3b8c7966badce80ad2808fb6599109a718fd40340e420789444761f4064957"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e4ed6db98b3a251233cdf09318b64dbacdc7d03e6943f80c24d3dd31aa472f76"
+      sha256 "2240d74a1c393f094464c5d9d51737d7607a7d3e7a8b14527678c253d100627d"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0a7fbdc3c777113f305bfebce47d62335fcf765edd915dc5118c895c20588393"
+      sha256 "a226a6bb4b41c247d2829dca4d3b8e8d007a5f671bb4a61938ef2032a4a6229d"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d42e8254e8ecbf81f5209233badf8fae00c987524eb52bf7173035a4ac609d81"
+      sha256 "0f0f039a737c85770df2836013517f49ce6bd8fed0971fae70b6c2f2e944813e"
       url "https://github.com/vegardlu/cue-cli/releases/download/v#{version}/cue_#{version}_linux_amd64.tar.gz"
     end
   end
