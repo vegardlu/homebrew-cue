@@ -1,6 +1,6 @@
 cask "cue-tab" do
-  version "0.1.0"
-  sha256 "8fefc90d669501fc0c12f3a02cd52e0be2c2ecf522793a2fbd6fdae96f0059ab"
+  version "0.1.1"
+  sha256 "53541395e3766ae6c9fb308edec0208e7485a728e6eae590feed8b9e41c18fa7"
 
   url "https://github.com/vegardlu/cue-tab-releases/releases/download/v#{version}/CueTab-#{version}.dmg"
   name "Cue Tab"
