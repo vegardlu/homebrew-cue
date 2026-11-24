@@ -13,7 +13,7 @@ cask "cue-tab" do
   end
 
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Cue Tab.app"
 
